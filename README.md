@@ -7,11 +7,10 @@ This repository contains a Grasshopper workflow designed to enable Microsoft Hol
 
 - Capture real-world physical objects and generate point cloud data.
 - Seamless integration with Grasshopper for advanced visualization and manipulation.
-- Ideal for research, design, and digital reconstruction applications.
 
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Vid_3DScannedStructure.gif?raw=true" alt="Example GIF" width="500">
 
-## Prerequisites
+## Tool & Equipments
 1. **Microsoft HoloLens 2**: Install Fologram plugin to Microsoft HoloLens 2 device & link Fologram account to the device.
 2. **Fologram Plugin**: Install the Fologram plugin for Grasshopper. This is essential for enabling communication between HoloLens 2 and Grasshopper.
    - [Download and install Fologram](https://fologram.com/)
