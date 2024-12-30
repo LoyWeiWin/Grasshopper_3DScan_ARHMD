@@ -3,12 +3,13 @@
 This repository contains a Grasshopper workflow designed to enable Microsoft HoloLens 2 to perform 3D scanning of physical artifacts and convert them into point cloud data. It leverages the capabilities of the HoloLens 2 and integrates seamlessly with Grasshopper for visualization and further processing.
 
 ## Features
-![ScanningBuiltArtefact](https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Img_3DScanningProcedure_UsingMicrosoftHololens2.jpg?raw=true)
+<img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Img_3DScanningProcedure_UsingMicrosoftHololens2.jpg?raw=true" alt="Scanning Built Artefact" width="500">
+
 - Capture real-world physical objects and generate point cloud data.
 - Seamless integration with Grasshopper for advanced visualization and manipulation.
 - Ideal for research, design, and digital reconstruction applications.
 
-![Example](https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Vid_3DScannedStructure.gif)
+<img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Vid_3DScannedStructure.gif?raw=true" alt="Example GIF" width="500">
 
 ## Prerequisites
 1. **Microsoft HoloLens 2**: Install Fologram plugin to Microsoft HoloLens 2 device & link Fologram account to the device.
