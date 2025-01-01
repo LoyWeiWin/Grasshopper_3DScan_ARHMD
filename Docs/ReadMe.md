@@ -2,7 +2,7 @@
 
 This repository contains a Grasshopper workflow designed to enable Microsoft HoloLens 2 to perform 3D scanning of physical artifacts and convert them into point cloud data. It leverages the capabilities of the HoloLens 2 and integrates seamlessly with Grasshopper for visualization and further processing.
 
-## Features
+## Key Features
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Img_3DScanningProcedure_UsingMicrosoftHololens2.jpg?raw=true" alt="Scanning Built Artefact" width="500">
 
 - Capture real-world physical objects and generate point cloud data.
@@ -17,17 +17,16 @@ This repository contains a Grasshopper workflow designed to enable Microsoft Hol
 3. **Grasshopper**
 4. **3D Rhinocerous**
 
-## Folder Structure
+## Repository Structure
 - **`GrasshopperFiles/`**: Contains the Grasshopper scripts for setting up the scanning workflow.
 - **`Assets/`**: Includes any supporting files or images for documentation.
 - **`Docs/`**: Includes any doucmentation and reference.
 
+For more details, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_3DScanning/wiki)
+
 ## Contributing
-Contributions to improve this workflow are welcome! Please follow the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_3DScanning/wiki/Contributing-Guidelines) found in the wiki
+Contributions to improve this workflow are welcome! Please follow the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_3DScanning/wiki/Contributing-Guidelines) in the wiki
 
 ## Acknowledgements
 This project was independently developed as part of my personal initiative and commitment to advancing this field.
 
----
-
-For any inquiries or assistance, feel free to reach out or open an issue in the repository.
