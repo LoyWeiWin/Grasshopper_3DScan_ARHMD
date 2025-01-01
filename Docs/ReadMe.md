@@ -1,4 +1,4 @@
-# 3D Scanning Workflow for Microsoft HoloLens 2 with Grasshopper
+# 3D Scanning Workflow using Microsoft HoloLens 2 & Grasshopper
 
 This repository contains a Grasshopper workflow designed to enable Microsoft HoloLens 2 to perform 3D scanning of physical artifacts and convert them into point cloud data. It leverages the capabilities of the HoloLens 2 and integrates seamlessly with Grasshopper for visualization and further processing.
 
