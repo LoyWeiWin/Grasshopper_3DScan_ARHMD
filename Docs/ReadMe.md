@@ -35,6 +35,7 @@ This repository contains a Grasshopper workflow designed to enable Microsoft Hol
 ## Folder Structure
 - **`GrasshopperFiles/`**: Contains the Grasshopper scripts for setting up the scanning workflow.
 - **`Assets/`**: Includes any supporting files or images for documentation.
+- **`Docs/`**: Includes any doucmentation and reference.
 
 ## Notes
 - Make sure Research Mode is enabled before attempting to use the IR camera for scanning. Refer to [this guide](https://docs.fologram.com/e0299e1613584158b8c9a5ec6d1bfad5#Enabling_Research_Mode) for step-by-step instructions.
