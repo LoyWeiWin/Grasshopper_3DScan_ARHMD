@@ -1,19 +1,7 @@
-# Required Grasshopper Plugins
+# Required Grasshopper Plugin(s)
 
-This project uses the following plugins to facilitate communication between Grasshopper and Arduino:
+This project uses the following plugin(s) to establish physical-cyber environment using Grasshopper.
 
-## 1. Firefly
-- **Description:** Enables communication between Grasshopper and Arduino via serial port.
-- **Download:** [Firefly](https://www.food4rhino.com/en/app/firefly)
-- **Installation:** Follow the instructions on the Firefly page.
-
-## 2. GHowl
-- **Description:** Facilitates advanced communication protocols, including UDP and OSC.
-- **Download:** [GHowl](https://www.food4rhino.com/en/app/ghowl)
-
-### Plugin Configuration
-- Ensure plugins are loaded in Grasshopper's `Libraries` folder.
-- Restart Rhino after installation.
-
-**Note**
-- Detail steps can be seen in this website. https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/
+## 1. Fologram
+- **Description:** A plugin designed to facilitate real-time, intuitive communication and collaboration between humans and robots through augmented reality (AR) environment.
+- **Download:** [Fologram](https://fologram.com/download)
