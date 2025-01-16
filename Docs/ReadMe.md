@@ -23,7 +23,7 @@ This repository contains a Grasshopper workflow designed to enable Microsoft Hol
 For more details, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_3DScanning/wiki).
 
 ## Contributing
-Contributions to improve this workflow are welcome! Please follow the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_3DScanning_Documentation/wiki/05_Contributing-Guidelines) in the wiki.
+Contributions to improve this workflow are welcome! Please follow the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_3DScanning_Documentation/wiki/04_Contributing-Guidelines) in the wiki.
 
 ## Acknowledgements
 This project was independently developed as part of my personal initiative and commitment to advancing this field.
