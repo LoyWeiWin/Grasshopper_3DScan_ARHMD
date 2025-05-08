@@ -1,11 +1,10 @@
 # 3D Scanning Workflow using Microsoft HoloLens 2 & Grasshopper
 
-This repository provides a Grasshopper-based workflow for 3D scanning physical artifacts using the Microsoft HoloLens 2. The captured data is converted into point clouds, enabling real-time visualization and further geometric processing in Grasshopper.
+This repository provides a Grasshopper-based workflow for 3D scanning physical artifacts using the Microsoft HoloLens 2. The captured data is converted into point clouds, enabling real-time visualisation and further geometric processing in Grasshopper.
 
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Img_3DScanningProcedure_UsingMicrosoftHololens2.jpg?raw=true" alt="Scanning Built Artifact" width="500">
-*Figure 1: Overview of the scanning process using Microsoft HoloLens 2.*
+Overview of the scanning process using Microsoft HoloLens 2.
 
----
 
 ## Table of Contents
 - [Key Features](#key-features)
@@ -19,55 +18,41 @@ This repository provides a Grasshopper-based workflow for 3D scanning physical a
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
 
----
 
 ## Key Features
+<img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_3DScannedStructure.gif?raw=true" alt="Example GIF" width="500">
 
 - Real-time 3D scanning using mixed reality
 - Seamless integration between HoloLens 2 and Rhino/Grasshopper
 - Visual feedback and bounding box representations during scanning
 - Optional post-processing of point cloud data within Grasshopper
 
-<img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_3DScannedStructure.gif?raw=true" alt="Example GIF" width="500">
-
----
-
 ## Tools & Software Requirements
 
 To use this workflow, ensure the following hardware and software are available and properly set up:
 
 ### Hardware
-- **Microsoft HoloLens 2**  
+1. **Microsoft HoloLens 2**  
   - Install the [Fologram app](https://docs.fologram.com/d19731141fc648d08681b02e48652abf).
   - Link the device to your Fologram account.
   - Enable [Research Mode](https://docs.fologram.com/e0299e1613584158b8c9a5ec6d1bfad5#Enabling_Research_Mode) to access depth camera data.
 
-- **Workstation**  
-  - Capable of running Rhino 8 and Grasshopper smoothly (moderate to high-spec recommended).
+2. **Workstation**  
+  - Capable of running Rhino 7 and Grasshopper smoothly (moderate to high-spec recommended).
 
 ### Software
-1. **Rhino 8**  
-   - Download trial or full version from [rhino3d.com](https://www.rhino3d.com/download/).
+1. **[Rhino 8 & Grasshopper](https://www.rhino3d.com/download/)**  
 
-2. **Grasshopper**  
-   - Pre-installed with Rhino 8. No separate installation required.
+3. **[Fologram Plugin](https://fologram.com/) for Rhino/Grasshopper** and follow [setup instructions](https://docs.fologram.com/06a14a21e33a4406ba047ad84e03c53b#Fologram_for_Rhino).
 
-3. **Fologram Plugin for Rhino/Grasshopper**  
-   - [Download](https://fologram.com/) and follow [setup instructions](https://docs.fologram.com/06a14a21e33a4406ba047ad84e03c53b#Fologram_for_Rhino).
+4. **[Volvox Plugin (Optional)](https://www.food4rhino.com/en/app/volvox)**, if you intend to post-process point cloud data directly in Grasshopper.Alternatively, export point clouds as `.ply` files and use [CloudCompare](https://www.danielgm.net/cc/) for external processing.
 
-4. **Volvox Plugin (Optional)**  
-   - [Download Volvox](https://www.food4rhino.com/en/app/volvox) if you intend to post-process point cloud data directly in Grasshopper.
-   - Alternatively, export point clouds as `.ply` files and use [CloudCompare](https://www.danielgm.net/cc/) for external processing.
-
----
 
 ## Repository Structure
-
-```plaintext
-├── GrasshopperFiles/   # Grasshopper scripts for the scanning workflow
-├── Assets/             # Images, GIFs, and media files
-├── Docs/               # Supplementary documentation and references
-```
+- `GrasshopperFiles/`: Grasshopper scripts for the scanning workflow.
+- `RhinoFiles/`: Virtual environment and visual marker (in A4 pdf).
+- `Assets/`: Images, thumbnails and videos
+- `Docs/`: Documentation and troubleshooting.
 
 ---
 
@@ -76,7 +61,6 @@ To use this workflow, ensure the following hardware and software are available a
 1. Follow the setup steps for Rhino, Fologram, and HoloLens listed above.
 2. Ensure all plugins are correctly installed before proceeding to launch.
 
----
 
 ## Launching the Application
 
@@ -94,7 +78,7 @@ To use this workflow, ensure the following hardware and software are available a
 
    <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_RegisterCyberPhysicalRealm.gif?raw=true" width="500">
 
----
+
 
 ## Using the Computational Workflow
 
@@ -125,7 +109,6 @@ To use this workflow, ensure the following hardware and software are available a
 
    <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_ResetInputData.gif?raw=true" width="500">
 
----
 
 ## Saving Scanned Data
 
@@ -164,4 +147,4 @@ Contributions are welcome and appreciated!
 
 ## Acknowledgements
 
-This project was independently developed as a personal research initiative, with the aim of advancing digital fabrication workflows and spatial computing applications.
+This project was independently developed as a personal research initiative, with the aim of advancing digital fabrication workflows and spatial computing applications. I would like to thank the developers at Fologram for their support and assistance throughout the course of this research initiative.
