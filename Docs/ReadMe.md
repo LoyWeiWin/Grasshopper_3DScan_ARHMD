@@ -1,11 +1,11 @@
 # 3D Scanning Workflow using Microsoft HoloLens 2 & Grasshopper
 
-This repository contains a Grasshopper workflow designed to enable Microsoft HoloLens 2 to perform 3D scanning of physical artifacts and convert them into point cloud data. It leverages the capabilities of the HoloLens 2 and integrates seamlessly with Grasshopper for visualization and further processing.
+This repository provides a Grasshopper-based workflow that enables 3D scanning of physical artifacts using Microsoft HoloLens 2. The workflow converts scanned data into point clouds for real-time visualization and further geometric processing within Grasshopper.
 
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Img_3DScanningProcedure_UsingMicrosoftHololens2.jpg?raw=true" alt="Scanning Built Artifact" width="500">
+*Figure 1: Workflow overview of the scanning process using HoloLens 2.*
 
 ## Key Features
-- Capture real-world physical objects and generate point cloud data.
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_3DScannedStructure.gif?raw=true" alt="Example GIF" width="500">
 
 ## Tools & Equipment
@@ -23,7 +23,16 @@ This repository contains a Grasshopper workflow designed to enable Microsoft Hol
 For more details, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_3DScanning/wiki).
 
 ## Contributing
-Contributions to improve this workflow are welcome! Please follow the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_3DScanning_Documentation/wiki/04_Contributing-Guidelines) in the wiki.
+Contributions to improve this workflow are welcome! 
+
+### How to Contribute
+- Fork the repository and create a new branch for your changes.
+- Ensure code adheres to the existing style and conventions.
+- Submit a pull request with a clear description of your changes.
+
+### Reporting Issues
+- Use the GitHub Issues tab to report bugs or suggest features.
+- Provide a detailed description, including screenshots or logs if possible.
 
 ## Acknowledgements
 This project was independently developed as part of my personal initiative and commitment to advancing this field.
