@@ -1,0 +1,1 @@
+This is a pointcloud data gathered from one of the research project. Rhino has the capabilities to export the 3d scanned data into e57 which can be further prosessed in (cloudcomapre)[https://www.cloudcompare.org/]
