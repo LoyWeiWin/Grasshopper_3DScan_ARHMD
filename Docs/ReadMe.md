@@ -12,15 +12,12 @@ This repository provides a Grasshopper-based workflow that enables 3D scanning o
 1. **Microsoft HoloLens 2**: Install the Fologram plugin on the HoloLens 2 device and link your Fologram account to the device.
 2. **Fologram Plugin**: Install the Fologram plugin for Grasshopper. This is essential for enabling communication between HoloLens 2 and Grasshopper.
    - [Download and install Fologram](https://fologram.com/)
-3. **Grasshopper**
-4. **3D Rhinoceros**
+3. **Volvox Plugin**: [Download](https://www.food4rhino.com/en/app/volvox). Only download this plugin if you wish to use Grasshopper for post-processing your pointcloud.
 
 ## Repository Structure
 - **`GrasshopperFiles/`**: Contains the Grasshopper scripts for setting up the scanning workflow.
 - **`Assets/`**: Includes supporting files and images for documentation.
 - **`Docs/`**: Includes documentation and references.
-
-For more details, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_3DScanning/wiki).
 
 ## Contributing
 Contributions to improve this workflow are welcome! 
