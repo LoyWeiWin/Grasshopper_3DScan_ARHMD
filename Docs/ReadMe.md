@@ -1,112 +1,167 @@
 # 3D Scanning Workflow using Microsoft HoloLens 2 & Grasshopper
 
-This repository provides a Grasshopper-based workflow that enables 3D scanning of physical artifacts using Microsoft HoloLens 2. The workflow converts scanned data into point clouds for real-time visualization and further geometric processing within Grasshopper.
+This repository provides a Grasshopper-based workflow for 3D scanning physical artifacts using the Microsoft HoloLens 2. The captured data is converted into point clouds, enabling real-time visualization and further geometric processing in Grasshopper.
 
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Thumbnails/Img_3DScanningProcedure_UsingMicrosoftHololens2.jpg?raw=true" alt="Scanning Built Artifact" width="500">
-*Figure 1: Workflow overview of the scanning process using HoloLens 2.*
+*Figure 1: Overview of the scanning process using Microsoft HoloLens 2.*
+
+---
+
+## Table of Contents
+- [Key Features](#key-features)
+- [Tools & Software Requirements](#tools--software-requirements)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Launching the Application](#launching-the-application)
+- [Using the Computational Workflow](#using-the-computational-workflow)
+- [Saving Scanned Data](#saving-scanned-data)
+- [Tips for Optimal Performance](#tips-for-optimal-performance)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+
+---
 
 ## Key Features
+
+- Real-time 3D scanning using mixed reality
+- Seamless integration between HoloLens 2 and Rhino/Grasshopper
+- Visual feedback and bounding box representations during scanning
+- Optional post-processing of point cloud data within Grasshopper
+
 <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_3DScannedStructure.gif?raw=true" alt="Example GIF" width="500">
 
-## Tools & Equipment
-1. **Microsoft HoloLens 2**: Install the Fologram plugin on the HoloLens 2 device and link your Fologram account to the device.
-<<<<<<< HEAD
-2. **Workstation**: Capable of operating Rhino & Grasshopper.
-=======
-2. **Fologram Plugin**: Install the Fologram plugin for Grasshopper. This is essential for enabling communication between HoloLens 2 and Grasshopper.
-   - [Download and install Fologram](https://fologram.com/)
-3. **Volvox Plugin**: [Download](https://www.food4rhino.com/en/app/volvox). Only download this plugin if you wish to use Grasshopper for post-processing your pointcloud.
->>>>>>> b1a209a1e25c58b54117b806671b8ac5019c47ec
+---
+
+## Tools & Software Requirements
+
+To use this workflow, ensure the following hardware and software are available and properly set up:
+
+### Hardware
+- **Microsoft HoloLens 2**  
+  - Install the [Fologram app](https://docs.fologram.com/d19731141fc648d08681b02e48652abf).
+  - Link the device to your Fologram account.
+  - Enable [Research Mode](https://docs.fologram.com/e0299e1613584158b8c9a5ec6d1bfad5#Enabling_Research_Mode) to access depth camera data.
+
+- **Workstation**  
+  - Capable of running Rhino 8 and Grasshopper smoothly (moderate to high-spec recommended).
+
+### Software
+1. **Rhino 8**  
+   - Download trial or full version from [rhino3d.com](https://www.rhino3d.com/download/).
+
+2. **Grasshopper**  
+   - Pre-installed with Rhino 8. No separate installation required.
+
+3. **Fologram Plugin for Rhino/Grasshopper**  
+   - [Download](https://fologram.com/) and follow [setup instructions](https://docs.fologram.com/06a14a21e33a4406ba047ad84e03c53b#Fologram_for_Rhino).
+
+4. **Volvox Plugin (Optional)**  
+   - [Download Volvox](https://www.food4rhino.com/en/app/volvox) if you intend to post-process point cloud data directly in Grasshopper.
+   - Alternatively, export point clouds as `.ply` files and use [CloudCompare](https://www.danielgm.net/cc/) for external processing.
+
+---
 
 ## Repository Structure
-- **`GrasshopperFiles/`**: Contains the Grasshopper scripts for setting up the scanning workflow.
-- **`Assets/`**: Includes supporting files and images for documentation.
-- **`Docs/`**: Includes documentation and references.
 
-<<<<<<< HEAD
+```plaintext
+├── GrasshopperFiles/   # Grasshopper scripts for the scanning workflow
+├── Assets/             # Images, GIFs, and media files
+├── Docs/               # Supplementary documentation and references
+```
+
+---
+
 ## Getting Started
 
-### Tool and Software Requirements
-1. Download a trial version of [Rhino 8](https://www.rhino3d.com/download/).
-2. Install the [Fologram](https://fologram.com/download) plug-in by following [these](https://docs.fologram.com/06a14a21e33a4406ba047ad84e03c53b#Fologram_for_Rhino) instructions:
-4. Install [Volvox](https://www.food4rhino.com/en/app/volvox) plugin if you wish to use the post-processing Grasshopper definition. Alternatively, feel free to export the pointcloud as a ply. file and import to [cloudcompare](https://www.danielgm.net/cc/) for post-processing..
+1. Follow the setup steps for Rhino, Fologram, and HoloLens listed above.
+2. Ensure all plugins are correctly installed before proceeding to launch.
 
-### Connecting to the Microsoft Hololens 2
+---
 
-> Begin by powering on and starting the Hololens.
+## Launching the Application
 
-1. Once the robot is fully powered on, check if `Fologram` is installed in the device
-
-> [!IMPORTANT]  
-> If `Fologram` app is not yet been installed. See the installation tips [here](https://docs.fologram.com/d19731141fc648d08681b02e48652abf).
-
-2. Attach the Microsoft Hololens 2 to the [Fologram account](https://docs.fologram.com/dbd97d5d8d2a4233b7a5181a49a3e37d#Attaching_devices_to_your_Fologram_account).
-
-3. Research Mode must be enabled on the HoloLens 2 to access the infrared (IR) camera, which is critical for scanning. Follow the instructions here to enable Research Mode: [Fologram Research Mode Guide](https://docs.fologram.com/e0299e1613584158b8c9a5ec6d1bfad5#Enabling_Research_Mode)
-
-## Launch Application
 1. **Prepare Your Setup**
-   - Open the [Grasshopper definition](https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/GrasshopperFiles/GH_LidarScanningWithFologram.gh) file provided in this repository.
-   - Power on your Microsoft HoloLens 2 and ensure it is properly set up. Ensure **Research Mode** is activated.  
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_Hololens_DeveloperMode.jpg?raw=true" alt="Scanning XRStart" width="500">
-   - Launch the **Fologram** application on your HoloLens.
+   - Open the [Grasshopper definition](https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/GrasshopperFiles/GH_LidarScanningWithFologram.gh).
+   - Ensure HoloLens is powered on and Research Mode is enabled.
+   - Launch the **Fologram** app on your HoloLens.
+
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_Hololens_DeveloperMode.jpg?raw=true" width="500">
 
 2. **Establish Connection**
-   - In the Rhino command bar, type `Fologram` to activate the Fologram panel.
-   - Click the **Connect** button in the panel. A QR code will appear in Grasshopper.  
-   - Scan the QR code with your HoloLens to establish a connection between the HoloLens and Grasshopper.  
+   - In Rhino, type `Fologram` in the command line.
+   - Open the Fologram panel and click **Connect**.
+   - Scan the generated QR code with your HoloLens.
 
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_RegisterCyberPhysicalRealm.gif?raw=true" alt="Scanning QR" width="500">
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_RegisterCyberPhysicalRealm.gif?raw=true" width="500">
 
+---
 
-## Using the Computational Workflow / Script(s)
+## Using the Computational Workflow
+
 1. **Access the Fologram Menu**
-   - Raise your palm facing toward you to pull up the Fologram menu on your HoloLens.  
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_FologramMenuButton.png?raw=true" alt="ActivateMenu" width="500">
-   - Select the **purple button** to access scanning options.
+   - Raise your palm to access the in-app menu on HoloLens.
+   - Tap the purple button for scanning options.
+
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_FologramMenuButton.png?raw=true" width="500">
 
 2. **Begin Scanning**
-   - Press the `00_ClickToScan` button in the Grasshopper definition to start scanning.  
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_FologramInterface.png?raw=true" alt="Scanning Button" width="500">
+   - In Grasshopper, activate `00_ClickToScan`.
 
-   - As you scan, a bounding box will appear around each captured object in the augmented reality (AR) environment.  
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_FologramAfterRecording.png?raw=true" alt="ScanningWithBox" width="500">
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_FologramInterface.png?raw=true" width="500">
 
-3. **Visualize Scanned Regions** *(Optional)*  
-   - Activate `01_VisualiseScannedRegion` in Grasshopper to view previously scanned regions.  
+   - Captured objects appear with bounding boxes in AR.
 
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_ActivateScanningVisibility.png?raw=true" alt="Scanning XRStart" width="500">
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_FologramAfterRecording.png?raw=true" width="500">
 
-   - **Note**: This feature requires significant computational power. If you experience glitches or reduced performance on HoloLens, deactivate this function to improve stability.
+3. **Visualize Scanned Regions** *(Optional)*
+   - Activate `01_VisualiseScannedRegion` in Grasshopper.
 
-4. **Reset Scanned Data**  
-   - If you want to discard previously scanned data, press the `02_Reset` button in the Grasshopper definition.
-      <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_ResetInputData.gif?raw=true" alt="Scanning ResetInput" width="500">
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Img/IMG_ActivateScanningVisibility.png?raw=true" width="500">
+
+   > **Note:** This step may reduce performance on some devices.
+
+4. **Reset Scanned Data**
+   - Press `02_Reset` to clear all scanned data.
+
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_ResetInputData.gif?raw=true" width="500">
+
+---
 
 ## Saving Scanned Data
+
 1. **Internalize Point Cloud Data**
-   - Once scanning is complete, internalize the point cloud data in Grasshopper to save it.  
-         <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_InternalisedData.gif?raw=true" alt="Scanning InternalisedInput" width="500">
+   - After scanning, right-click on the Grasshopper component and choose `Internalize Data`.
+
+   <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_InternalisedData.gif?raw=true" width="500">
+
+---
 
 ## Tips for Optimal Performance
-- If you encounter glitches or performance issues while scanning, consider deactivating bounding box visibility. This can significantly improve the AR experience.  
-- Ensure the HoloLens is fully charged and operating in a well-lit environment for best results.
 
+- Turn off the visualisation of bounding boxes if you experience lag.
+- Keep the HoloLens fully charged during scanning.
+- Use the system in a well-lit environment for best results.
+- If you are still experiencing issue feel free to read the troubleshooting page.
 
+---
 
-=======
->>>>>>> b1a209a1e25c58b54117b806671b8ac5019c47ec
 ## Contributing
-Contributions to improve this workflow are welcome! 
+
+Contributions are welcome and appreciated!
 
 ### How to Contribute
-- Fork the repository and create a new branch for your changes.
-- Ensure code adheres to the existing style and conventions.
-- Submit a pull request with a clear description of your changes.
+
+- Fork this repository and create a feature branch.
+- Make your changes and ensure code consistency.
+- Submit a pull request with a descriptive summary.
 
 ### Reporting Issues
-- Use the GitHub Issues tab to report bugs or suggest features.
-- Provide a detailed description, including screenshots or logs if possible.
+
+- Use the [GitHub Issues](https://github.com/LoyWeiWin/Grasshopper_3DScanning/issues) tab.
+- Provide context, screenshots, or error logs if applicable.
+
+---
 
 ## Acknowledgements
-This project was independently developed as part of my personal initiative and commitment to advancing this field.
+
+This project was independently developed as a personal research initiative, with the aim of advancing digital fabrication workflows and spatial computing applications.
