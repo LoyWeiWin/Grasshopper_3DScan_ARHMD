@@ -54,7 +54,7 @@ To use this workflow, ensure the following hardware and software are available a
 - `Assets/`: Images, thumbnails and videos
 - `Docs/`: Documentation and troubleshooting.
 
----
+
 
 ## Getting Started
 
@@ -117,7 +117,7 @@ To use this workflow, ensure the following hardware and software are available a
 
    <img src="https://github.com/LoyWeiWin/Grasshopper_3DScanning/blob/main/Assets/Video/Vid_InternalisedData.gif?raw=true" width="500">
 
----
+
 
 ## Tips for Optimal Performance
 
@@ -126,7 +126,7 @@ To use this workflow, ensure the following hardware and software are available a
 - Use the system in a well-lit environment for best results.
 - If you are still experiencing issue feel free to read the troubleshooting page.
 
----
+
 
 ## Contributing
 
@@ -143,7 +143,6 @@ Contributions are welcome and appreciated!
 - Use the [GitHub Issues](https://github.com/LoyWeiWin/Grasshopper_3DScanning/issues) tab.
 - Provide context, screenshots, or error logs if applicable.
 
----
 
 ## Acknowledgements
 
